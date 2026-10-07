@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://m62265cwhfdm"]
+
+[ext_resource type="Texture2D" uid="uid://2epp8suhiioo" path="res://assets/tausta.jpg" id="1_f3sb7"]
+
+[node name="World" type="Node2D" unique_id=1860248028]
+position = Vector2(614, 571)
+
+[node name="Background" type="Node2D" parent="." unique_id=870409266]
+
+[node name="ColorRect" type="ColorRect" parent="Background" unique_id=908185804]
+offset_left = -90.0
+offset_top = -75.0
+offset_right = 87.0
+offset_bottom = 68.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TextureRect" type="TextureRect" parent="Background" unique_id=785942329]
+offset_left = -958.0
+offset_top = -1343.0
+offset_right = 1042.0
+offset_bottom = 88.0
+texture = ExtResource("1_f3sb7")
+metadata/_edit_use_anchors_ = true
+
+[node name="Player" type="Node2D" parent="." unique_id=1382712727]
+
+[node name="TextureRect" type="TextureRect" parent="Player" unique_id=663898397]
+z_index = -1
+offset_right = 40.0
+offset_bottom = 37.0
+metadata/_edit_use_anchors_ = true
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=1823262134]
+offset_left = -37.0
+offset_top = -35.0
+offset_right = 37.0
+offset_bottom = 83.0
+metadata/_edit_use_anchors_ = true
