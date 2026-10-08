@@ -4,9 +4,9 @@
 [ext_resource type="Texture2D" uid="uid://hj6bp5ol38xd" path="res://assets/player.png" id="2_tlwt5"]
 
 [node name="World" type="Node2D" unique_id=1860248028]
-position = Vector2(614, 571)
 
 [node name="Background" type="Node2D" parent="." unique_id=870409266]
+position = Vector2(504, 582)
 
 [node name="ColorRect" type="ColorRect" parent="Background" unique_id=908185804]
 offset_left = -90.0
@@ -24,14 +24,7 @@ texture = ExtResource("1_fj7yv")
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" type="Node2D" parent="." unique_id=1382712727]
-position = Vector2(-126, -196)
-
-[node name="ColorRect" type="ColorRect" parent="Player" unique_id=1823262134]
-offset_left = -147.0
-offset_top = -231.0
-offset_right = -73.0
-offset_bottom = -113.0
-metadata/_edit_use_anchors_ = true
+position = Vector2(520, 543)
 
 [node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=200492964]
 position = Vector2(-2, -92.99999)
