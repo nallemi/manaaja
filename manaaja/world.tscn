@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://m62265cwhfdm"]
 
-[ext_resource type="Texture2D" uid="uid://2epp8suhiioo" path="res://assets/tausta.jpg" id="1_f3sb7"]
+[ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="1_fj7yv"]
+[ext_resource type="Texture2D" uid="uid://hj6bp5ol38xd" path="res://assets/player.png" id="2_tlwt5"]
 
 [node name="World" type="Node2D" unique_id=1860248028]
 position = Vector2(614, 571)
@@ -19,20 +20,22 @@ offset_left = -958.0
 offset_top = -1343.0
 offset_right = 1042.0
 offset_bottom = 88.0
-texture = ExtResource("1_f3sb7")
+texture = ExtResource("1_fj7yv")
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" type="Node2D" parent="." unique_id=1382712727]
-
-[node name="TextureRect" type="TextureRect" parent="Player" unique_id=663898397]
-z_index = -1
-offset_right = 40.0
-offset_bottom = 37.0
-metadata/_edit_use_anchors_ = true
+position = Vector2(-126, -196)
 
 [node name="ColorRect" type="ColorRect" parent="Player" unique_id=1823262134]
-offset_left = -37.0
-offset_top = -35.0
-offset_right = 37.0
-offset_bottom = 83.0
+offset_left = -147.0
+offset_top = -231.0
+offset_right = -73.0
+offset_bottom = -113.0
 metadata/_edit_use_anchors_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="Player" unique_id=200492964]
+position = Vector2(-2, -92.99999)
+scale = Vector2(1.66, 1.6746987)
+texture = ExtResource("2_tlwt5")
+hframes = 4
+frame = 1
