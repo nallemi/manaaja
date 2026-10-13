@@ -157,7 +157,7 @@
         <mxCell id="s97tJeGhTiAeQmdl2MuM-63" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Mene rituaalikohtaan ja yhdistä ainekset" vertex="1">
           <mxGeometry height="80" width="120" x="40" y="830" as="geometry" />
         </mxCell>
-        <mxCell id="s97tJeGhTiAeQmdl2MuM-66" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Cutscene: teini menee ulos, juo potionin" vertex="1">
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-66" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Cutscene: teini&amp;nbsp; juo potionin ja näkee ihastuksensa joka ignoraa" vertex="1">
           <mxGeometry height="80" width="120" x="350" y="870" as="geometry" />
         </mxCell>
         <mxCell id="s97tJeGhTiAeQmdl2MuM-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Ovi. Ei aukea, teksti: I can&#39;t leave before I&#39;m ready to drink the potion" vertex="1">
