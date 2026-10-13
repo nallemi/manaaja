@@ -1,0 +1,184 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="wqFM4YVQ7ftpAOPgMPYQ">
+    <mxGraphModel dx="1363" dy="1002" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-9" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;dashed=1;" target="s97tJeGhTiAeQmdl2MuM-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-11" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Alkutilanne: tyyppi on huoneessaan" vertex="1">
+          <mxGeometry height="60" width="120" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-2" parent="1" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;Rituaali 1&lt;/h1&gt;&lt;p&gt;Rakkaustaika: love potion&lt;/p&gt;" vertex="1">
+          <mxGeometry height="80" width="140" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-8" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Inventaario:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Kynttilöitä&lt;/div&gt;&lt;div&gt;Energiajuomaa&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Tarvitaan:&lt;/div&gt;&lt;div&gt;Kärpäsiä&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="120" x="200" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-64" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-10" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-10" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Etsi puuttuva asia. Älä poistu huoneesta" vertex="1">
+          <mxGeometry height="70" width="100" x="50" y="182.5" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-16" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="s97tJeGhTiAeQmdl2MuM-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Pizzaboksi" vertex="1">
+          <mxGeometry height="35" width="100" x="350" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-19" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Sänky" vertex="1">
+          <mxGeometry height="35" width="100" x="200" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-22" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-21" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Torakoita" vertex="1">
+          <mxGeometry height="35" width="100" x="200" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-26" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-43" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-15" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-42">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-15" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Katso pizzaboksiin" vertex="1">
+          <mxGeometry height="80" width="120" x="340" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-18" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-17" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Katso sängyn alle" vertex="1">
+          <mxGeometry height="50" width="100" x="200" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-21" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Torakat juoksevat karkuun. Teksti: jotain" vertex="1">
+          <mxGeometry height="80" width="120" x="190" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-49" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Satan monthly -lehti" vertex="1">
+          <mxGeometry height="35" width="100" x="500" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-41" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-25" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-25" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Kerää talteen mätä pizzapala" vertex="1">
+          <mxGeometry height="80" width="120" x="340" y="406" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-27" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Pizzapala, jos ei kerätä nyt, voi kerätä myöhemmin" vertex="1">
+          <mxGeometry height="60" width="110" x="345" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-31" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-30" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-35" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-29" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-34">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-29" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Kirjahylly" vertex="1">
+          <mxGeometry height="35" width="100" x="500" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-32" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-23" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-30" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Katso kirjahyllyn päälle" vertex="1">
+          <mxGeometry height="50" width="100" x="500" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Ohjekirja" vertex="1">
+          <mxGeometry height="35" width="100" x="710" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-36" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-34" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Katso kirjahyllyä" vertex="1">
+          <mxGeometry height="50" width="100" x="710" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-37" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Interact" vertex="1">
+          <mxGeometry height="60" width="120" x="350" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-38" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Item" vertex="1">
+          <mxGeometry height="60" width="120" x="510" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-39" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Future item" vertex="1">
+          <mxGeometry height="60" width="120" x="670" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-51" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-42" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-48">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-42" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Kärpäset pöllähtävät ulos. Teksti: Ewwww" vertex="1">
+          <mxGeometry height="80" width="110" x="490" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-59" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-48" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="s97tJeGhTiAeQmdl2MuM-58" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-48" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Lätkäise kärpäsiä lehdellä" vertex="1">
+          <mxGeometry height="80" width="110" x="640" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-54" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-23" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-53" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="567" y="395" as="sourcePoint" />
+            <mxPoint x="700" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-57" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-53" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-56">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-53" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Equippaa lehti" vertex="1">
+          <mxGeometry height="60" width="120" x="560" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-76" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-56" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-60">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-56" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Yritä lätkiä torakoita lehdellä" vertex="1">
+          <mxGeometry height="80" width="120" x="840" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-65" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-58" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-58" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Kuolleita kärpäsiä" vertex="1">
+          <mxGeometry height="35" width="100" x="645" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-60" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Torakat liian nopeita ja isoja" vertex="1">
+          <mxGeometry height="60" width="120" x="840" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-62" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.star" value="" vertex="1">
+          <mxGeometry height="35" width="35" x="730" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-71" edge="1" parent="1" source="s97tJeGhTiAeQmdl2MuM-63" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="s97tJeGhTiAeQmdl2MuM-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-63" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Mene rituaalikohtaan ja yhdistä ainekset" vertex="1">
+          <mxGeometry height="80" width="120" x="40" y="830" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-66" parent="1" style="shape=step;perimeter=stepPerimeter;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Cutscene: teini menee ulos, juo potionin" vertex="1">
+          <mxGeometry height="80" width="120" x="350" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-67" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Ovi. Ei aukea, teksti: I can&#39;t leave before I&#39;m ready to drink the potion" vertex="1">
+          <mxGeometry height="60" width="140" x="840" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-68" parent="1" style="shape=offPageConnector;whiteSpace=wrap;html=1;verticalAlign=top;" value="Ovi aukeaa" vertex="1">
+          <mxGeometry height="80" width="80" x="790" y="772.5" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-69" parent="1" style="shape=offPageConnector;whiteSpace=wrap;html=1;verticalAlign=top;" value="Inventaariosta häviää kynttilät, energiajuoma, kärpäset, jää lehti ja pizzapala (jos kerätty)" vertex="1">
+          <mxGeometry height="155" width="130" x="890" y="772.5" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-70" parent="1" style="shape=offPageConnector;whiteSpace=wrap;html=1;" value="Change" vertex="1">
+          <mxGeometry height="60" width="70" x="850" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-72" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;shapeInside=1;fixedSize=1;" value="Action" vertex="1">
+          <mxGeometry height="50" width="100" x="950" y="55" as="geometry" />
+        </mxCell>
+        <mxCell id="s97tJeGhTiAeQmdl2MuM-73" parent="1" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.star" value="Task completion" vertex="1">
+          <mxGeometry height="35" width="35" x="1080" y="62.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
