@@ -7,6 +7,8 @@
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=783423446]
+position = Vector2(0.5000057, -5.499996)
+scale = Vector2(1.6933334, 1.4638554)
 texture = ExtResource("2_i3pqv")
 hframes = 4
 frame = 1
@@ -14,3 +16,5 @@ frame = 1
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=305676652]
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1116283821]
+limit_enabled = false
+position_smoothing_enabled = true

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://d3xsr4sx3dtko"]
+
+[ext_resource type="Script" uid="uid://tbwmbilofvui" path="res://interactable.gd" id="1_wh154"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_h72kw"]
+radius = 39.0
+height = 146.0
+
+[node name="Interactable" type="Area2D" unique_id=396894312]
+script = ExtResource("1_wh154")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=928368481]
+
+[node name="Marker2D" type="Marker2D" parent="." unique_id=250598033]
+position = Vector2(-5, 40)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=221464734]
+position = Vector2(3, -49)
+shape = SubResource("CapsuleShape2D_h72kw")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
+[connection signal="interacted" from="." to="." method="_on_interacted"]

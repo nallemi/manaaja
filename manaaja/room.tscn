@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://dax5c0c3g3i3s"]
+
+[ext_resource type="Script" uid="uid://ddms6voyokcfp" path="res://room.gd" id="1_4o3f6"]
+[ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="2_v5vuv"]
+[ext_resource type="PackedScene" uid="uid://d3xsr4sx3dtko" path="res://interactable.tscn" id="3_ka7wq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_aqk2v"]
+size = Vector2(172, 169)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_036b0"]
+size = Vector2(115.82414, 193.95792)
+
+[node name="Room" type="Node2D" unique_id=299629110]
+script = ExtResource("1_4o3f6")
+
+[node name="background" type="Node2D" parent="." unique_id=202743860]
+
+[node name="Sprite2D" type="Sprite2D" parent="background" unique_id=1056987381]
+position = Vector2(575, 321.5)
+scale = Vector2(0.6, 0.444206)
+texture = ExtResource("2_v5vuv")
+
+[node name="Bookshelf" parent="." unique_id=396894312 instance=ExtResource("3_ka7wq")]
+position = Vector2(683, 278)
+
+[node name="Marker2D" parent="Bookshelf" index="1" unique_id=250598033]
+position = Vector2(-22, 41)
+
+[node name="CollisionShape2D" parent="Bookshelf" index="2" unique_id=221464734]
+position = Vector2(20, -57.5)
+shape = SubResource("RectangleShape2D_aqk2v")
+
+[node name="Table" parent="." unique_id=571910946 instance=ExtResource("3_ka7wq")]
+position = Vector2(220, 351)
+
+[node name="Marker2D" parent="Table" index="1" unique_id=250598033]
+position = Vector2(45, 38)
+
+[node name="CollisionShape2D" parent="Table" index="2" unique_id=221464734]
+position = Vector2(12.999985, -58)
+rotation = 0.85346603
+scale = Vector2(1, 0.9999999)
+skew = 0.3106686
+shape = SubResource("RectangleShape2D_036b0")
+
+[node name="Pizza" parent="." unique_id=859715386 instance=ExtResource("3_ka7wq")]
+position = Vector2(973, 535)
+
+[node name="Marker2D" parent="Pizza" index="1" unique_id=250598033]
+position = Vector2(-81, -22)
+
+[node name="CollisionShape2D" parent="Pizza" index="2" unique_id=221464734]
+position = Vector2(-7, -51)
+
+[editable path="Bookshelf"]
+[editable path="Table"]
+[editable path="Pizza"]

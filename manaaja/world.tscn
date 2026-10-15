@@ -1,27 +1,30 @@
 [gd_scene format=3 uid="uid://m62265cwhfdm"]
 
+[ext_resource type="Script" uid="uid://ckfml3tfvqx7e" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="1_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://bssi5aq5ewlb3" path="res://player.tscn" id="2_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://dax5c0c3g3i3s" path="res://room.tscn" id="4_aqk2v"]
 
 [node name="World" type="Node2D" unique_id=1860248028]
+script = ExtResource("1_aqk2v")
 
 [node name="Background" type="Node2D" parent="." unique_id=870409266]
+visible = false
 position = Vector2(504, 582)
 
-[node name="ColorRect" type="ColorRect" parent="Background" unique_id=908185804]
-offset_left = -90.0
-offset_top = -75.0
-offset_right = 87.0
-offset_bottom = 68.0
-metadata/_edit_use_anchors_ = true
-
 [node name="TextureRect" type="TextureRect" parent="Background" unique_id=785942329]
-offset_left = -958.0
-offset_top = -1343.0
-offset_right = 1042.0
-offset_bottom = 88.0
+visible = false
+offset_left = -832.0
+offset_top = -1234.0
+offset_right = 1168.0
+offset_bottom = 197.0
 texture = ExtResource("1_fj7yv")
+expand_mode = 3
+stretch_mode = 4
 metadata/_edit_use_anchors_ = true
 
 [node name="Player" parent="." unique_id=441730898 instance=ExtResource("2_fj7yv")]
+z_index = 2
 position = Vector2(393, 293)
+
+[node name="Room" parent="." unique_id=299629110 instance=ExtResource("4_aqk2v")]
