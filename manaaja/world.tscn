@@ -2,11 +2,12 @@
 
 [ext_resource type="Script" uid="uid://ckfml3tfvqx7e" path="res://world.gd" id="1_aqk2v"]
 [ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://cfy27d7lwvu5c" path="res://player_room.tscn" id="2_036b0"]
 [ext_resource type="PackedScene" uid="uid://bssi5aq5ewlb3" path="res://player.tscn" id="2_fj7yv"]
-[ext_resource type="PackedScene" uid="uid://dax5c0c3g3i3s" path="res://room.tscn" id="4_aqk2v"]
 
 [node name="World" type="Node2D" unique_id=1860248028]
 script = ExtResource("1_aqk2v")
+starting_room = ExtResource("2_036b0")
 
 [node name="Background" type="Node2D" parent="." unique_id=870409266]
 visible = false
@@ -26,16 +27,3 @@ metadata/_edit_use_anchors_ = true
 [node name="Player" parent="." unique_id=441730898 instance=ExtResource("2_fj7yv")]
 z_index = 2
 position = Vector2(393, 293)
-
-[node name="Player_room" parent="." unique_id=299629110 instance=ExtResource("4_aqk2v")]
-
-[node name="Hallway" parent="." unique_id=1787773271 instance=ExtResource("4_aqk2v")]
-
-[node name="Sprite2D" parent="Hallway/background" parent_id_path=PackedInt32Array(1787773271, 202743860) index="0" unique_id=1056987381]
-rotation = -3.1031954
-
-[editable path="Hallway"]
-[editable path="Hallway/Bookshelf"]
-[editable path="Hallway/Table"]
-[editable path="Hallway/Pizza"]
-[editable path="Hallway/Door 0"]

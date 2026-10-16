@@ -1,28 +1,36 @@
 [gd_scene format=3 uid="uid://cfy27d7lwvu5c"]
 
-[ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="1_hw8qq"]
-[ext_resource type="Script" uid="uid://ddms6voyokcfp" path="res://room.gd" id="1_plsfm"]
-[ext_resource type="PackedScene" uid="uid://d3xsr4sx3dtko" path="res://interactable.tscn" id="2_8tnse"]
+[ext_resource type="PackedScene" uid="uid://dax5c0c3g3i3s" path="res://room.tscn" id="1_hw8qq"]
+[ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="2_1ojmq"]
+[ext_resource type="PackedScene" uid="uid://d3xsr4sx3dtko" path="res://interactable.tscn" id="3_3q6a7"]
+[ext_resource type="PackedScene" uid="uid://8lrrcfqgnxx6" path="res://door.tscn" id="4_wo40j"]
 
-[node name="Room" type="Node2D" unique_id=299629110]
-script = ExtResource("1_plsfm")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o6f6g"]
+size = Vector2(139.57755, 163.18338)
 
-[node name="background" type="Node2D" parent="." unique_id=202743860]
+[node name="Player_room" unique_id=299629110 instance=ExtResource("1_hw8qq")]
 
-[node name="Sprite2D" type="Sprite2D" parent="background" unique_id=1056987381]
-position = Vector2(575, 321.5)
-scale = Vector2(0.6, 0.444206)
-texture = ExtResource("1_hw8qq")
+[node name="Sprite2D" parent="background" parent_id_path=PackedInt32Array(202743860) index="0" unique_id=1056987381]
+texture = ExtResource("2_1ojmq")
 
-[node name="Bookshelf" parent="." unique_id=396894312 instance=ExtResource("2_8tnse")]
-position = Vector2(683, 278)
+[node name="Bookcase" parent="." index="1" unique_id=396894312 instance=ExtResource("3_3q6a7")]
+position = Vector2(707, 217)
 
-[node name="Marker2D" parent="Bookshelf" index="1" unique_id=250598033]
-position = Vector2(-22, 41)
+[node name="Marker2D" parent="Bookcase" index="1" unique_id=250598033]
+position = Vector2(-9.6796875, 99.51099)
 
-[node name="CollisionShape2D" parent="Bookshelf" index="2" unique_id=221464734]
-position = Vector2(14, -51)
+[node name="CollisionShape2D" parent="Bookcase" index="2" unique_id=221464734]
+position = Vector2(4, 4)
+rotation = 0.31066868
+shape = SubResource("RectangleShape2D_o6f6g")
 
-[connection signal="interacted" from="Bookshelf" to="." method="_on_interactable_interacted"]
+[node name="Door 1" parent="." index="2" unique_id=1667056367 instance=ExtResource("4_wo40j")]
+position = Vector2(41, 480)
+target_room = null
+target_door = ""
 
-[editable path="Bookshelf"]
+[node name="Marker2D" parent="Door 1" index="1" unique_id=250598033]
+position = Vector2(57.77362, -2.9623413)
+
+[editable path="Bookcase"]
+[editable path="Door 1"]
