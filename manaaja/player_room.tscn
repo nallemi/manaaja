@@ -24,13 +24,16 @@ position = Vector2(4, 4)
 rotation = 0.31066868
 shape = SubResource("RectangleShape2D_o6f6g")
 
-[node name="Door 1" parent="." index="2" unique_id=1667056367 instance=ExtResource("4_wo40j")]
-position = Vector2(41, 480)
+[node name="Door" parent="." index="2" unique_id=1463327499 instance=ExtResource("4_wo40j")]
+position = Vector2(43, 470)
 target_room = null
 target_door = ""
 
-[node name="Marker2D" parent="Door 1" index="1" unique_id=250598033]
-position = Vector2(57.77362, -2.9623413)
+[node name="Interactable" parent="." index="3" unique_id=991244824 instance=ExtResource("3_3q6a7")]
+position = Vector2(242, 280)
+
+[connection signal="interacted" from="Bookcase" to="." method="_on_interacted"]
+[connection signal="interacted" from="Bookcase" to="." method="_on_interactable_interacted"]
+[connection signal="interacted" from="Door" to="." method="_on_interactable_interacted"]
 
 [editable path="Bookcase"]
-[editable path="Door 1"]
