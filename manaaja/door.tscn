@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://8lrrcfqgnxx6"]
+
+[ext_resource type="PackedScene" uid="uid://d3xsr4sx3dtko" path="res://interactable.tscn" id="1_ba8gm"]
+[ext_resource type="Script" uid="uid://dit5gqjr66ea" path="res://door.gd" id="2_v6xrn"]
+
+[node name="Door" unique_id=396894312 instance=ExtResource("1_ba8gm")]
+script = ExtResource("2_v6xrn")

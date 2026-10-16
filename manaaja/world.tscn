@@ -27,4 +27,15 @@ metadata/_edit_use_anchors_ = true
 z_index = 2
 position = Vector2(393, 293)
 
-[node name="Room" parent="." unique_id=299629110 instance=ExtResource("4_aqk2v")]
+[node name="Player_room" parent="." unique_id=299629110 instance=ExtResource("4_aqk2v")]
+
+[node name="Hallway" parent="." unique_id=1787773271 instance=ExtResource("4_aqk2v")]
+
+[node name="Sprite2D" parent="Hallway/background" parent_id_path=PackedInt32Array(1787773271, 202743860) index="0" unique_id=1056987381]
+rotation = -3.1031954
+
+[editable path="Hallway"]
+[editable path="Hallway/Bookshelf"]
+[editable path="Hallway/Table"]
+[editable path="Hallway/Pizza"]
+[editable path="Hallway/Door 0"]

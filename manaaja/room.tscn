@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://ddms6voyokcfp" path="res://room.gd" id="1_4o3f6"]
 [ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="2_v5vuv"]
 [ext_resource type="PackedScene" uid="uid://d3xsr4sx3dtko" path="res://interactable.tscn" id="3_ka7wq"]
+[ext_resource type="PackedScene" uid="uid://8lrrcfqgnxx6" path="res://door.tscn" id="4_v5vuv"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_aqk2v"]
 size = Vector2(172, 169)
@@ -52,6 +53,15 @@ position = Vector2(-81, -22)
 [node name="CollisionShape2D" parent="Pizza" index="2" unique_id=221464734]
 position = Vector2(-7, -51)
 
+[node name="Door 0" parent="." unique_id=139909584 instance=ExtResource("4_v5vuv")]
+position = Vector2(36, 507)
+target_room = null
+target_door = ""
+
+[node name="Marker2D" parent="Door 0" index="1" unique_id=250598033]
+position = Vector2(63, -30)
+
 [editable path="Bookshelf"]
 [editable path="Table"]
 [editable path="Pizza"]
+[editable path="Door 0"]

@@ -1,3 +1,4 @@
+class_name Interactable
 extends Area2D
 
 signal interacted
@@ -11,5 +12,5 @@ func interact():
 	print(self.name)
 
 
-func _on_interacted() -> void:
-	pass # Replace with function body.
+func _on_interacted(target) -> void:
+	print(target.name)
