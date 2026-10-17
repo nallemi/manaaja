@@ -5,3 +5,5 @@
 
 [node name="Door" unique_id=396894312 instance=ExtResource("1_ba8gm")]
 script = ExtResource("2_v6xrn")
+target_room = null
+target_door = ""

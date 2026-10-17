@@ -1,11 +1,13 @@
 extends Node2D
 
 signal interaction(target, target_position)
+signal enter_room(target_room, target_door)
 
-func _on_interactable_interacted(target) -> void:
+## Lähetetään worldille tietoa siitä että jotain huoneen esinettä on klikattu
+func _on_interacted(target) -> void:
 	interaction.emit(target, target.get_node("Marker2D").global_position)
-	print("Room vastaanotti: ", target.name)
 
+## lähetetään tieto worldille että nyt huoneesta lähdetään pois
 
-func _on_interacted() -> void:
-	pass # Replace with function body.
+func _on_exit_to(target_room: Variant, target_door: Variant) -> void:
+	enter_room.emit(target_room, target_door)

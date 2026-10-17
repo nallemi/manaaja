@@ -7,23 +7,28 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_88gup"]
 size = Vector2(157.23218, 377.82233)
 
-[node name="Room" unique_id=299629110 instance=ExtResource("1_n7rl0")]
+[node name="Hallway" unique_id=299629110 instance=ExtResource("1_n7rl0")]
 
 [node name="Sprite2D" parent="background" parent_id_path=PackedInt32Array(202743860) index="0" unique_id=1056987381]
 texture = ExtResource("2_kb5x2")
 
-[node name="Player_room_door" parent="." index="1" unique_id=396894312 instance=ExtResource("3_g8fis")]
+[node name="Hallway_door_1" parent="." index="1" unique_id=396894312 instance=ExtResource("3_g8fis")]
 position = Vector2(395, 271)
 scale = Vector2(0.6, 0.444206)
-target_room = null
-target_door = ""
+target_room = "uid://cfy27d7lwvu5c"
+target_door = "Player_room_door"
 
-[node name="Marker2D" parent="Player_room_door" index="1" unique_id=250598033]
+[node name="Marker2D" parent="Hallway_door_1" index="1" unique_id=250598033]
 position = Vector2(-18.333332, 119.313995)
 
-[node name="CollisionShape2D" parent="Player_room_door" index="2" unique_id=221464734]
+[node name="CollisionShape2D" parent="Hallway_door_1" index="2" unique_id=221464734]
 position = Vector2(29.166687, -97.92761)
 rotation = 0.3874631
 shape = SubResource("RectangleShape2D_88gup")
 
-[editable path="Player_room_door"]
+[connection signal="enter_room" from="." to="Hallway_door_1" method="_on_enter_room"]
+[connection signal="interaction" from="." to="Hallway_door_1" method="_on_interaction"]
+[connection signal="exit_to" from="Hallway_door_1" to="." method="_on_exit_to"]
+[connection signal="interacted" from="Hallway_door_1" to="." method="_on_interacted"]
+
+[editable path="Hallway_door_1"]

@@ -24,16 +24,24 @@ position = Vector2(4, 4)
 rotation = 0.31066868
 shape = SubResource("RectangleShape2D_o6f6g")
 
-[node name="Door" parent="." index="2" unique_id=1463327499 instance=ExtResource("4_wo40j")]
+[node name="Player_room_door" parent="." index="2" unique_id=1463327499 instance=ExtResource("4_wo40j")]
 position = Vector2(43, 470)
-target_room = null
-target_door = ""
+target_room = "uid://j287odgacof0"
+target_door = "Hallway_door_1"
 
-[node name="Interactable" parent="." index="3" unique_id=991244824 instance=ExtResource("3_3q6a7")]
-position = Vector2(242, 280)
+[node name="table" parent="." index="3" unique_id=2115903161 instance=ExtResource("3_3q6a7")]
+position = Vector2(216, 264)
 
+[node name="Marker2D" parent="table" index="1" unique_id=250598033]
+position = Vector2(36.040253, 122.448944)
+
+[connection signal="enter_room" from="." to="Player_room_door" method="_on_room_enter"]
+[connection signal="interaction" from="." to="Bookcase" method="_on_interaction"]
+[connection signal="interaction" from="." to="Player_room_door" method="_on_interaction"]
 [connection signal="interacted" from="Bookcase" to="." method="_on_interacted"]
-[connection signal="interacted" from="Bookcase" to="." method="_on_interactable_interacted"]
-[connection signal="interacted" from="Door" to="." method="_on_interactable_interacted"]
+[connection signal="exit_to" from="Player_room_door" to="." method="_on_exit_to"]
+[connection signal="interacted" from="Player_room_door" to="." method="_on_interacted"]
+[connection signal="interacted" from="table" to="." method="_on_interacted"]
 
 [editable path="Bookcase"]
+[editable path="table"]
