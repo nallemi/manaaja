@@ -5,8 +5,19 @@
 [node name="Room" type="Node2D" unique_id=299629110]
 script = ExtResource("1_4o3f6")
 
-[node name="background" type="Node2D" parent="." unique_id=202743860]
-
-[node name="Sprite2D" type="Sprite2D" parent="background" unique_id=1056987381]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1056987381]
 position = Vector2(575, 321.5)
 scale = Vector2(0.6, 0.444206)
+
+[node name="background" type="Node2D" parent="." unique_id=202743860]
+
+[node name="NavigationRegion2D" type="NavigationRegion2D" parent="." unique_id=1722947640]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1352414833]
+z_index = -21
+offset_left = -939.0
+offset_top = -714.0
+offset_right = 2158.0
+offset_bottom = 1406.0
+mouse_filter = 2
+color = Color(0, 0, 0, 1)

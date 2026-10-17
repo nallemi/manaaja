@@ -15,16 +15,20 @@ func _input(event):
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed == true:
 			interaction_target = null
 			target_position = get_global_mouse_position()
+			$NavigationAgent2D.target_position = target_position
+
 
 ## tarkistetaan onko klikkauksen kohde liikkuminen vai esine ja liikutetaan pelaajaa
 func _physics_process(_delta):
-	if global_position.distance_to(target_position) < 10:	
+	if $NavigationAgent2D.is_navigation_finished() == true:	
 		velocity = Vector2.ZERO
 		if interaction_target != null:
 			interaction_target.interact()
 			interaction_target = null
 	else: 
-		vector = global_position.direction_to(target_position)
+#		vector = global_position.direction_to(target_position)
+
+		vector = global_position.direction_to($NavigationAgent2D.get_next_path_position())
 		velocity = vector * 100
 	move_and_slide()
 

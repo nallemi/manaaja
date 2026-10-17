@@ -7,9 +7,14 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_88gup"]
 size = Vector2(157.23218, 377.82233)
 
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_1ojmq"]
+vertices = PackedVector2Array(607.21875, -25.796875, 454.79688, -15.7578125, 118.59375, -12.8203125, 94.67969, -64.96875, 586.75, -71.67969)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(112.196594, -2.7669983, 455.1966, -5.7669983, 622.1966, -16.766998, 593.1966, -81.767, 79.196594, -74.767)])
+
 [node name="Hallway" unique_id=299629110 instance=ExtResource("1_n7rl0")]
 
-[node name="Sprite2D" parent="background" parent_id_path=PackedInt32Array(202743860) index="0" unique_id=1056987381]
+[node name="Sprite2D" parent="." index="0" unique_id=1056987381]
 texture = ExtResource("2_kb5x2")
 
 [node name="Hallway_door_1" parent="." index="1" unique_id=396894312 instance=ExtResource("3_g8fis")]
@@ -19,12 +24,16 @@ target_room = "uid://cfy27d7lwvu5c"
 target_door = "Player_room_door"
 
 [node name="Marker2D" parent="Hallway_door_1" index="1" unique_id=250598033]
-position = Vector2(-18.333332, 119.313995)
+position = Vector2(9.999992, 150.83093)
 
 [node name="CollisionShape2D" parent="Hallway_door_1" index="2" unique_id=221464734]
 position = Vector2(29.166687, -97.92761)
 rotation = 0.3874631
 shape = SubResource("RectangleShape2D_88gup")
+
+[node name="NavigationRegion2D" parent="." index="3" unique_id=1722947640]
+position = Vector2(224.8034, 375.767)
+navigation_polygon = SubResource("NavigationPolygon_1ojmq")
 
 [connection signal="enter_room" from="." to="Hallway_door_1" method="_on_enter_room"]
 [connection signal="interaction" from="." to="Hallway_door_1" method="_on_interaction"]

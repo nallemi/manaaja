@@ -3,18 +3,29 @@
 [ext_resource type="Script" uid="uid://xyjadluta32r" path="res://Player.gd" id="1_onrkg"]
 [ext_resource type="Texture2D" uid="uid://hj6bp5ol38xd" path="res://assets/player.png" id="2_i3pqv"]
 
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_fdenq"]
+radius = 13.0
+height = 50.0
+
 [node name="Player" type="CharacterBody2D" unique_id=441730898]
 script = ExtResource("1_onrkg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=783423446]
-position = Vector2(-0.9999995, 8.999999)
+position = Vector2(2.9999998, -81.99999)
 scale = Vector2(1.3066667, 1.13253)
 texture = ExtResource("2_i3pqv")
 hframes = 4
 frame = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=305676652]
+position = Vector2(-2, 1)
+rotation = -1.5707964
+shape = SubResource("CapsuleShape2D_fdenq")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1116283821]
+position = Vector2(-2.7520142, -98.872314)
 limit_enabled = false
 position_smoothing_enabled = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1993147500]
+path_desired_distance = 10.0
