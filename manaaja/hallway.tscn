@@ -12,6 +12,9 @@ vertices = PackedVector2Array(607.21875, -25.796875, 454.79688, -15.7578125, 118
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(112.196594, -2.7669983, 455.1966, -5.7669983, 622.1966, -16.766998, 593.1966, -81.767, 79.196594, -74.767)])
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xsyy8"]
+size = Vector2(81.37366, 152.84926)
+
 [node name="Hallway" unique_id=299629110 instance=ExtResource("1_n7rl0")]
 
 [node name="Sprite2D" parent="." index="0" unique_id=1056987381]
@@ -35,9 +38,27 @@ shape = SubResource("RectangleShape2D_88gup")
 position = Vector2(224.8034, 375.767)
 navigation_polygon = SubResource("NavigationPolygon_1ojmq")
 
+[node name="Hallway_door_2" parent="." index="5" unique_id=569791979 instance=ExtResource("3_g8fis")]
+position = Vector2(744.79333, 219.48853)
+target_room = "uid://brg5tjutyddjs"
+target_door = "kitchen_door_1"
+
+[node name="Marker2D" parent="Hallway_door_2" index="1" unique_id=250598033]
+position = Vector2(-19.521362, 110.02936)
+
+[node name="CollisionShape2D" parent="Hallway_door_2" index="2" unique_id=221464734]
+position = Vector2(3.383606, 11.464447)
+rotation = 0.0837758
+scale = Vector2(1.08, 1)
+skew = 0.2687807
+shape = SubResource("RectangleShape2D_xsyy8")
+
 [connection signal="enter_room" from="." to="Hallway_door_1" method="_on_enter_room"]
 [connection signal="interaction" from="." to="Hallway_door_1" method="_on_interaction"]
 [connection signal="exit_to" from="Hallway_door_1" to="." method="_on_exit_to"]
 [connection signal="interacted" from="Hallway_door_1" to="." method="_on_interacted"]
+[connection signal="exit_to" from="Hallway_door_2" to="." method="_on_exit_to"]
+[connection signal="interacted" from="Hallway_door_2" to="." method="_on_interacted"]
 
 [editable path="Hallway_door_1"]
+[editable path="Hallway_door_2"]

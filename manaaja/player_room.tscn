@@ -3,7 +3,45 @@
 [ext_resource type="PackedScene" uid="uid://dax5c0c3g3i3s" path="res://room.tscn" id="1_hw8qq"]
 [ext_resource type="Texture2D" uid="uid://d1dm4kx5lux1f" path="res://assets/tausta.png" id="2_1ojmq"]
 [ext_resource type="PackedScene" uid="uid://d3xsr4sx3dtko" path="res://interactable.tscn" id="3_3q6a7"]
+[ext_resource type="Texture2D" uid="uid://dgepjoqfvajhn" path="res://assets/interactables/karpaset.png" id="3_wo40j"]
 [ext_resource type="PackedScene" uid="uid://8lrrcfqgnxx6" path="res://door.tscn" id="4_wo40j"]
+[ext_resource type="Texture2D" uid="uid://ymi1kv886rl1" path="res://assets/interactables/pizzabox.png" id="6_2dulj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o6f6g"]
+atlas = ExtResource("3_wo40j")
+region = Rect2(0, 0, 178, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sjpys"]
+atlas = ExtResource("3_wo40j")
+region = Rect2(178, 0, 178, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8qgar"]
+atlas = ExtResource("3_wo40j")
+region = Rect2(356, 0, 178, 120)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d0s76"]
+atlas = ExtResource("3_wo40j")
+region = Rect2(534, 0, 178, 120)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_h72kw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o6f6g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sjpys")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8qgar")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d0s76")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 10.0
+}]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6f6g"]
 size = Vector2(139.57755, 163.18338)
@@ -13,12 +51,30 @@ vertices = PackedVector2Array(647.6172, -105.75, 725.53906, 7.578125, 668.7969, 
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 6, 4, 3, 7, 8), PackedInt32Array(7, 9, 10, 11, 8), PackedInt32Array(12, 5, 8, 13), PackedInt32Array(8, 14, 15, 13), PackedInt32Array(16, 12, 13)])
 outlines = Array[PackedVector2Array]([PackedVector2Array(274.38242, 36.957764, 670.38245, 35.957764, 741.38245, 12.957764, 653.38245, -115.04224, 582.38245, -125.04224, 515.38245, -267.04224, 368.38242, -256.04224, 354.38242, -277.04224, 143.38242, -283.04224, 56.382416, -203.04224, 6.382416, -215.04224, -28.617584, -200.04224, -39.617584, -171.04224, -114.617584, -170.04224, -225.61758, -119.04224, -234.61758, -25.042236, 59.382416, 25.957764)])
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mt5hp"]
+size = Vector2(103, 58)
+
 [node name="Player_room" unique_id=299629110 instance=ExtResource("1_hw8qq")]
 
-[node name="Sprite2D" parent="." index="0" unique_id=1056987381]
+[node name="flies" parent="." index="0" unique_id=396894312 instance=ExtResource("3_3q6a7")]
+position = Vector2(692.82916, 462.68)
+
+[node name="CollisionShape2D" parent="flies" index="2" unique_id=221464734]
+position = Vector2(0.8873291, 14.197327)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="flies" index="3" unique_id=1749683471]
+z_index = 3
+position = Vector2(19.17082, 14.8200245)
+scale = Vector2(0.6067414, 0.67500025)
+sprite_frames = SubResource("SpriteFrames_h72kw")
+autoplay = "default"
+frame = 1
+frame_progress = 0.6519587
+
+[node name="Sprite2D" parent="." index="1" unique_id=1056987381]
 texture = ExtResource("2_1ojmq")
 
-[node name="Bookcase" parent="." index="1" unique_id=396894312 instance=ExtResource("3_3q6a7")]
+[node name="Bookcase" parent="." index="2" unique_id=1166313304 instance=ExtResource("3_3q6a7")]
 position = Vector2(707, 217)
 
 [node name="Marker2D" parent="Bookcase" index="1" unique_id=250598033]
@@ -29,20 +85,41 @@ position = Vector2(4, 4)
 rotation = 0.31066868
 shape = SubResource("RectangleShape2D_o6f6g")
 
-[node name="Player_room_door" parent="." index="2" unique_id=1463327499 instance=ExtResource("4_wo40j")]
+[node name="Player_room_door" parent="." index="3" unique_id=1463327499 instance=ExtResource("4_wo40j")]
 position = Vector2(43, 470)
 target_room = "uid://j287odgacof0"
 target_door = "Hallway_door_1"
 
-[node name="table" parent="." index="3" unique_id=2115903161 instance=ExtResource("3_3q6a7")]
+[node name="table" parent="." index="4" unique_id=2115903161 instance=ExtResource("3_3q6a7")]
 position = Vector2(216, 264)
 
 [node name="Marker2D" parent="table" index="1" unique_id=250598033]
 position = Vector2(36.040253, 122.448944)
 
-[node name="NavigationRegion2D" parent="." index="5" unique_id=1722947640]
+[node name="NavigationRegion2D" parent="." index="6" unique_id=1722947640]
 position = Vector2(239.61758, 555.04224)
 navigation_polygon = SubResource("NavigationPolygon_88gup")
+
+[node name="ColorRect" parent="." index="7" unique_id=1352414833]
+offset_left = -962.0
+offset_top = -693.0
+offset_right = 2135.0
+offset_bottom = 1427.0
+
+[node name="pizza_box" parent="." index="8" unique_id=1136934457 instance=ExtResource("3_3q6a7")]
+position = Vector2(675, 537)
+
+[node name="Sprite2D" parent="pizza_box" index="0" unique_id=928368481]
+position = Vector2(28.5, 16.75)
+scale = Vector2(0.715, 0.70353985)
+texture = ExtResource("6_2dulj")
+
+[node name="Marker2D" parent="pizza_box" index="1" unique_id=250598033]
+position = Vector2(-68.24194, 19.737305)
+
+[node name="CollisionShape2D" parent="pizza_box" index="2" unique_id=221464734]
+position = Vector2(24.5, 16)
+shape = SubResource("RectangleShape2D_mt5hp")
 
 [connection signal="enter_room" from="." to="Player_room_door" method="_on_room_enter"]
 [connection signal="interaction" from="." to="Bookcase" method="_on_interaction"]
@@ -52,5 +129,7 @@ navigation_polygon = SubResource("NavigationPolygon_88gup")
 [connection signal="interacted" from="Player_room_door" to="." method="_on_interacted"]
 [connection signal="interacted" from="table" to="." method="_on_interacted"]
 
+[editable path="flies"]
 [editable path="Bookcase"]
 [editable path="table"]
+[editable path="pizza_box"]
