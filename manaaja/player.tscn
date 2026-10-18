@@ -25,7 +25,13 @@ shape = SubResource("CapsuleShape2D_fdenq")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1116283821]
 position = Vector2(-2.7520142, -98.872314)
 limit_enabled = false
-position_smoothing_enabled = true
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="." unique_id=1993147500]
 path_desired_distance = 10.0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=859797137]
+offset_left = 489.0
+offset_top = -600.0
+offset_right = 808.0
+offset_bottom = 381.0
+color = Color(0.41725737, 0.4172574, 0.41725737, 1)

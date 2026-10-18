@@ -7,17 +7,23 @@
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_oe5bm"]
 vertices = PackedVector2Array(301.8125, 603.0469, 225.24219, 513.1797, 623.71094, 452.40625, 1088.6484, 448.03906, 555.47656, 358.14063, 169.64063, 420.9375, 99.65625, 280.97656, 480.1172, 196.64844, 614.47656, 282.0625, 637.25, 242.20313, 862.21094, 209.50781, 1077.7188, 377.45313)
 polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8), PackedInt32Array(9, 10, 11, 3, 2, 8), PackedInt32Array(4, 8, 2)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(85, 274, 482, 186, 611, 268, 631, 233, 865, 199, 1087, 372, 1100, 456, 298, 614, 206, 506, 606, 445, 551, 369, 164, 432)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(49, 253, 483, 129, 606, 246, 634, 205, 876, 146, 1108, 386, 1131, 542, 279, 767, 196, 614, 620, 524, 582, 447, 146, 512)])
 
 [node name="yard" unique_id=299629110 instance=ExtResource("1_f80kp")]
 
 [node name="Sprite2D" parent="." index="0" unique_id=1056987381]
 position = Vector2(586.49994, 315)
-scale = Vector2(0.9308333, 0.6702471)
+scale = Vector2(1, 1)
 texture = ExtResource("2_hkjqq")
 
 [node name="NavigationRegion2D" parent="." index="2" unique_id=1722947640]
 navigation_polygon = SubResource("NavigationPolygon_oe5bm")
+
+[node name="ColorRect" parent="." index="3" unique_id=1352414833]
+offset_left = -957.0
+offset_top = -702.0
+offset_right = 2140.0
+offset_bottom = 1418.0
 
 [node name="yard_door_1" parent="." index="4" unique_id=396894312 instance=ExtResource("3_ebimq")]
 position = Vector2(430.85815, 143.21675)
@@ -26,6 +32,9 @@ target_door = "Hallway_door_3"
 
 [node name="Marker2D" parent="yard_door_1" index="1" unique_id=250598033]
 position = Vector2(30.30304, 75.75757)
+
+[node name="CollisionShape2D" parent="yard_door_1" index="2" unique_id=221464734]
+position = Vector2(-9.858154, -85.21675)
 
 [connection signal="exit_to" from="yard_door_1" to="." method="_on_exit_to"]
 [connection signal="interacted" from="yard_door_1" to="." method="_on_interacted"]
