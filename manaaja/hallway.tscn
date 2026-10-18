@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://dax5c0c3g3i3s" path="res://room.tscn" id="1_n7rl0"]
 [ext_resource type="Texture2D" uid="uid://c8atiqlx51o5g" path="res://assets/hallway.png" id="2_kb5x2"]
 [ext_resource type="PackedScene" uid="uid://8lrrcfqgnxx6" path="res://door.tscn" id="3_g8fis"]
+[ext_resource type="AudioStream" uid="uid://dsn54e2w483a5" path="res://assets/music/Test.mp3.mp3" id="4_kb5x2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_88gup"]
 size = Vector2(157.23218, 377.82233)
@@ -67,6 +68,10 @@ position = Vector2(-55.901978, 13.309998)
 [node name="CollisionShape2D" parent="Hallway_door_3" index="2" unique_id=221464734]
 position = Vector2(-6.0340576, -20.933228)
 shape = SubResource("RectangleShape2D_e7g7u")
+
+[node name="AudioStreamPlayer" parent="." index="7" unique_id=243578025]
+stream = ExtResource("4_kb5x2")
+autoplay = true
 
 [connection signal="enter_room" from="." to="Hallway_door_1" method="_on_enter_room"]
 [connection signal="interaction" from="." to="Hallway_door_1" method="_on_interaction"]

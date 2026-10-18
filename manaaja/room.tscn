@@ -21,3 +21,5 @@ offset_right = 2158.0
 offset_bottom = 1406.0
 mouse_filter = 2
 color = Color(0, 0, 0, 1)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=243578025]
