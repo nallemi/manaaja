@@ -15,6 +15,9 @@ outlines = Array[PackedVector2Array]([PackedVector2Array(112.196594, -2.7669983,
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xsyy8"]
 size = Vector2(81.37366, 152.84926)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e7g7u"]
+size = Vector2(56, 137)
+
 [node name="Hallway" unique_id=299629110 instance=ExtResource("1_n7rl0")]
 
 [node name="Sprite2D" parent="." index="0" unique_id=1056987381]
@@ -53,12 +56,27 @@ scale = Vector2(1.08, 1)
 skew = 0.2687807
 shape = SubResource("RectangleShape2D_xsyy8")
 
+[node name="Hallway_door_3" parent="." index="6" unique_id=882631626 instance=ExtResource("3_g8fis")]
+position = Vector2(861.03406, 314.43323)
+target_room = "uid://wpu0tara057g"
+target_door = "yard_door_1"
+
+[node name="Marker2D" parent="Hallway_door_3" index="1" unique_id=250598033]
+position = Vector2(-55.901978, 13.309998)
+
+[node name="CollisionShape2D" parent="Hallway_door_3" index="2" unique_id=221464734]
+position = Vector2(-6.0340576, -20.933228)
+shape = SubResource("RectangleShape2D_e7g7u")
+
 [connection signal="enter_room" from="." to="Hallway_door_1" method="_on_enter_room"]
 [connection signal="interaction" from="." to="Hallway_door_1" method="_on_interaction"]
 [connection signal="exit_to" from="Hallway_door_1" to="." method="_on_exit_to"]
 [connection signal="interacted" from="Hallway_door_1" to="." method="_on_interacted"]
 [connection signal="exit_to" from="Hallway_door_2" to="." method="_on_exit_to"]
 [connection signal="interacted" from="Hallway_door_2" to="." method="_on_interacted"]
+[connection signal="exit_to" from="Hallway_door_3" to="." method="_on_exit_to"]
+[connection signal="interacted" from="Hallway_door_3" to="." method="_on_interacted"]
 
 [editable path="Hallway_door_1"]
 [editable path="Hallway_door_2"]
+[editable path="Hallway_door_3"]
