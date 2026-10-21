@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://8lrrcfqgnxx6" path="res://door.tscn" id="3_7yojt"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_xsyy8"]
-vertices = PackedVector2Array(843.21875, 924.3125, 569.89844, 968.8828, 394.0703, 943.6172, 344.0078, 886.52344, 771.27344, 804.2031, 1144.4766, 797.8828, 364.10938, 410.4297, 341.8203, 351.3125, 475.28125, 334.1875, 480.1875, 374.35938, 596.0703, 487.67188, 205.35938, 535.6406, 207.77344, 458.45313, 561.0078, 371.1172, 615.4922, 409.46094, 766.9922, 672.65625, 1215.25, 595.47656, 1219.8438, 691.0469, 763.78906, 583.0703, 882.60156, 371.4375)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4, 5), PackedInt32Array(6, 7, 8, 9), PackedInt32Array(10, 11, 12, 6), PackedInt32Array(10, 6, 9, 13, 14), PackedInt32Array(5, 4, 15, 16, 17), PackedInt32Array(18, 10, 14, 19, 16), PackedInt32Array(15, 18, 16)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(198, 451, 351, 404, 328, 343, 484, 323, 489, 364, 564, 361, 618, 399, 885, 361, 1225, 590, 1230, 694, 1151, 806, 846, 934, 570, 979, 389, 953, 325, 880, 761, 796, 757, 673, 754, 589, 594, 498, 195, 547)])
+vertices = PackedVector2Array(364.10938, 410.4297, 341.8203, 351.3125, 475.28125, 334.1875, 480.1875, 374.35938, 596.0703, 487.67188, 205.35938, 535.6406, 207.77344, 458.45313, 561.0078, 371.1172, 615.4922, 409.46094, 763.78906, 583.0703, 882.60156, 371.4375, 1215.25, 595.47656, 766.9922, 672.5625, 1219.8438, 691.0469, 1144.6875, 797.5781, 1030.8984, 836.4922, 930.4531, 868.3594, 772.71094, 803.1875)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 0), PackedInt32Array(4, 0, 3, 7, 8), PackedInt32Array(9, 4, 8, 10, 11), PackedInt32Array(12, 9, 11, 13, 14, 15, 16, 17)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(198, 451, 351, 404, 328, 343, 484, 323, 489, 364, 564, 361, 618, 399, 885, 361, 1225, 590, 1230, 694, 1151, 806, 1034, 846, 930, 879, 763, 810, 757, 673, 754, 589, 599, 463, 209, 542)])
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wo40j"]
 
@@ -22,10 +22,10 @@ texture = ExtResource("2_kdutl")
 navigation_polygon = SubResource("NavigationPolygon_xsyy8")
 
 [node name="ColorRect" parent="." index="3" unique_id=1352414833]
-offset_left = -855.0
-offset_top = -738.0
-offset_right = 2242.0
-offset_bottom = 1382.0
+offset_left = -842.0
+offset_top = -730.0
+offset_right = 2255.0
+offset_bottom = 1390.0
 
 [node name="kitchen_door_1" parent="." index="4" unique_id=396894312 instance=ExtResource("3_7yojt")]
 position = Vector2(279.64587, 185.30527)

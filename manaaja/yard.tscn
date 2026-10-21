@@ -5,9 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://8lrrcfqgnxx6" path="res://door.tscn" id="3_ebimq"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_oe5bm"]
-vertices = PackedVector2Array(301.8125, 603.0469, 225.24219, 513.1797, 623.71094, 452.40625, 1088.6484, 448.03906, 555.47656, 358.14063, 169.64063, 420.9375, 99.65625, 280.97656, 480.1172, 196.64844, 614.47656, 282.0625, 637.25, 242.20313, 862.21094, 209.50781, 1077.7188, 377.45313)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 7, 8), PackedInt32Array(9, 10, 11, 3, 2, 8), PackedInt32Array(4, 8, 2)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(49, 253, 483, 129, 606, 246, 634, 205, 876, 146, 1108, 386, 1131, 542, 279, 767, 196, 614, 620, 524, 582, 447, 146, 512)])
+vertices = PackedVector2Array(284.03906, 755.3203, 211.17188, 621, 632.40625, 531.59375, 1119.7969, 534.6094, 640.09375, 213.8125, 872.7969, 157.07031, 1098.5703, 390.64063, 604.2969, 427.6875, 607.6328, 261.35156, 152.47656, 500.8203, 62.15625, 259.64063, 480.25, 140.1875)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 5, 6, 3, 2, 7, 8), PackedInt32Array(7, 9, 10, 11, 8)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(49, 253, 483, 129, 606, 246, 634, 205, 876, 146, 1108, 386, 1131, 542, 279, 767, 196, 614, 620, 524, 597, 439, 146, 512)])
 
 [node name="yard" unique_id=299629110 instance=ExtResource("1_f80kp")]
 

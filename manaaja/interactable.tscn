@@ -17,5 +17,7 @@ position = Vector2(-18.427002, 93.02792)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=221464734]
 shape = SubResource("CapsuleShape2D_h72kw")
 
+[connection signal="action_request" from="." to="." method="_on_action_request"]
+[connection signal="clicked" from="." to="." method="_on_clicked"]
 [connection signal="input_event" from="." to="." method="_on_input_event"]
 [connection signal="interacted" from="." to="." method="_on_interacted"]

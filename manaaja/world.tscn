@@ -4,6 +4,8 @@
 [ext_resource type="PackedScene" uid="uid://cfy27d7lwvu5c" path="res://player_room.tscn" id="2_036b0"]
 [ext_resource type="PackedScene" uid="uid://bssi5aq5ewlb3" path="res://player.tscn" id="2_fj7yv"]
 [ext_resource type="PackedScene" uid="uid://j287odgacof0" path="res://hallway.tscn" id="3_036b0"]
+[ext_resource type="PackedScene" uid="uid://dby4ssilaefer" path="res://text_box.tscn" id="5_036b0"]
+[ext_resource type="Script" uid="uid://dbc5kmgclebng" path="res://dialogue_ui.gd" id="6_dwbse"]
 
 [node name="World" type="Node2D" unique_id=1860248028]
 script = ExtResource("1_aqk2v")
@@ -17,3 +19,22 @@ position = Vector2(504, 582)
 [node name="Player" parent="." unique_id=441730898 instance=ExtResource("2_fj7yv")]
 z_index = 2
 position = Vector2(393, 293)
+
+[node name="Dialogue_Ui" parent="." unique_id=1590145928 instance=ExtResource("5_036b0")]
+follow_viewport_enabled = false
+script = ExtResource("6_dwbse")
+
+[node name="PanelContainer" parent="Dialogue_Ui" index="0" unique_id=736793870]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -90.0
+offset_right = 1.0
+offset_bottom = 1.0
+
+[node name="Sprite2D" parent="Dialogue_Ui/PanelContainer" index="0" unique_id=983228985]
+position = Vector2(83, 56)
+
+[editable path="Dialogue_Ui"]

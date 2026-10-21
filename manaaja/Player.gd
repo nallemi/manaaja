@@ -10,7 +10,7 @@ func _ready():
 	target_position = global_position
 
 ## Seurataan hiiren klikkauksia ja annetaan positio pelaajalle mihin liikkua
-func _input(event):
+func _unhandled_input(event):
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed == true:
 			interaction_target = null
