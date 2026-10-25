@@ -123,6 +123,7 @@ shape = SubResource("RectangleShape2D_mt5hp")
 
 [connection signal="enter_room" from="." to="Player_room_door" method="_on_room_enter"]
 [connection signal="interaction" from="." to="." method="_on_interaction"]
+[connection signal="action_request" from="flies" to="." method="_on_action_request"]
 [connection signal="interacted" from="flies" to="." method="_on_interacted"]
 [connection signal="action_request" from="Bookcase" to="." method="_on_action_request"]
 [connection signal="interacted" from="Bookcase" to="." method="_on_interacted"]

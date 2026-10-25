@@ -1,0 +1,21 @@
+{
+"Bookcase": {
+	"full": [
+		"Oh, the latest Satanic Monthly, I was looking for this!"
+		],
+	"empty":[
+		"So many books, so little time.",
+		"I'll read more on spells and incantations tomorrow",
+		"I should probably return that to the library."
+		]
+	},
+"flies": {
+	"safe": [
+		"Pesky flies, grandma should really clean up in here!",
+		"I wonder if they would count as flesh that feed on the dead..",
+		"Quit buzzing around!"
+		],
+	"kill":
+		["Swap, swap, swap! and you are dead! Hahahaha"]
+	}
+}
