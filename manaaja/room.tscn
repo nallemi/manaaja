@@ -23,3 +23,6 @@ mouse_filter = 2
 color = Color(0, 0, 0, 1)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=243578025]
+
+[connection signal="enter_room" from="." to="." method="_on_enter_room"]
+[connection signal="room_action_request" from="." to="." method="_on_room_action_request"]

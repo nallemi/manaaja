@@ -2,6 +2,7 @@ class_name Interactable
 extends Area2D
 
 signal interacted
+signal action_request
 
 ## saadaan tieto onko esinettä klikattu ja lähetetään tieto eteenpäin huoneelle.
 func _on_input_event(viewport: Node, event: InputEvent, shape_idx: int) -> void:
@@ -16,3 +17,4 @@ func _on_interacted(target) -> void:
 
 func interact():
 	print("done", self.name)
+	action_request.emit(self.name)
